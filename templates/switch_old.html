@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>WEB CONTROL OF APPLANCES</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/switch_old.css') }}">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='script/web_control.js') }}"></script>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/root.css') }}">
+
+
+    <link rel="shortcut icon" href="{{ url_for('static',filename='img/img/logo.jpg') }}" type="image/x-icon">
+    
+</head>
+<header>
+  <a class="logo" href="https://www.giet.edu" target="_blank"><img src="{{ url_for('static',filename='img/images/logo.jpg') }}" width="60px"
+          height="60px" alt="logo"></a>
+  <nav>
+      <ul class="nav__links">
+        <li><a href="/home">Home</a></li>
+            <li><a href="/input">New Building</a></li>
+            <li class="nav-item dropdown dropdown1"><a href="#">Existing Building</a>
+              <div class="dropdown-content">
+                <a href="/dashboard">Moniter and Control</a>
+                  <a href="/homeenergy">Energy Calculator</a>
+            </div>
+            </li>
+      </ul>
+
+  </nav>
+
+</header>
+<center>
+        <h1>App_01</h1>
+    <label class="switch">
+    <input type="checkbox" onclick="getapi1()" id="c1" >
+    <span class="slider round" ></span>
+  </label>
+
+  <h1>App_02</h1>
+    <label class="switch">
+    <input type="checkbox" onclick="getapi2()" id="c2" >
+    <span class="slider round" ></span>
+  </label>
+
+  <h1>App_03</h1>
+    <label class="switch">
+    <input type="checkbox" onclick="getapi3()" id="c3" >
+    <span class="slider round" ></span>
+  </label>
+
+  <h1>App_03</h1>
+    <label class="switch">
+    <input type="checkbox" onclick="getapi4()" id="c4" >
+    <span class="slider round" ></span>
+  </label>
+</center>
+
